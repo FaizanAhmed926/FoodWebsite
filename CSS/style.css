@@ -1,0 +1,264 @@
+* {
+    margin: 0px;
+    padding: 0%;
+}
+
+:root {
+    --navbar-height: 59px;
+}
+
+
+
+
+/* navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+
+#logo {
+    margin: 5px 15px;
+
+}
+
+#logo img {
+    height: 84px;
+    width: 98px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 93%;
+    width: 189%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    margin: 4px 19px;
+    color: aliceblue;
+    border-radius: 30%;
+    font-family: "Audiowide", sans-serif;
+    font-family: 'Audiowide', cursive;
+}
+
+#navbar ul li a:hover {
+    background-color: whitesmoke;
+    color: rgb(39, 19, 77);
+    /* text-decoration: underline; */
+}
+
+/* navigation bar end  */
+
+
+
+
+/* home content start */
+#HOME {
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+#HOME h1 {
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+#HOME p {
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: Spectral, serif;
+}
+
+#HOME::before {
+    content: "";
+    background: url("../food4.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.87;
+}
+
+/* home content ends */
+
+
+
+/* utility classes starts */
+.h-primary {
+    font-size: 3rem;
+    padding: 1%;
+    font-family: "Audiowide", sans-serif;
+    font-family: 'Audiowide', cursive;
+}
+
+.h-secondary {
+    font-size: 1.8rem;
+    padding: 1%;
+    font-family: 'Dancing Script', cursive;
+}
+
+.btn {
+    padding: 1%;
+    border: 2px solid #d4c64b;
+    background-color: rgb(67 46 87);
+    color: aliceblue;
+    margin: 9px 9px;
+    border-radius: 31%;
+    font-family: "Audiowide", sans-serif;
+    cursor: pointer;
+    font-family: 'Audiowide', cursive;
+}
+
+.btn:hover {
+    background-color: rgb(5, 43, 56);
+    color: #d4c64b;
+}
+
+.center {
+    text-align: center;
+}
+
+/* utility classes ends*/
+
+
+
+
+/* services section starts */
+.box img {
+    margin: auto;
+    width: 239px;
+    height: 135px;
+    display: block;
+    border: 1px solid white;
+    border-radius: 44%;
+}
+
+.box {
+    width: 500px;
+    height: 340px;
+    border: 3px solid rgb(84, 84, 31);
+    /* display: flex; */
+    border-radius: 17%;
+    padding: 19px;
+    margin: 2%;
+    background-color: #e0ecec;
+}
+
+#service {
+    display: flex;
+}
+
+#service p {
+    text-align: center;
+    /* font-size: 1.3rem; */
+    font-family: Spectral, serif;
+}
+
+/* services section ends */
+
+
+
+/* client section starts */
+#client-section {
+    height: 445px;
+}
+
+#client-section::before {
+    content: "";
+    background: url("../food2.webp") no-repeat center center/cover;
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item img {
+    height: 100px;
+    width: 100px;
+}
+
+.client-item {
+    margin: 100px;
+}
+
+/* client section ends */
+
+
+
+
+/* contact section starts */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    background: url("../contact1.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#contact-box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box form
+{
+    width: 40%;
+}
+#contact-box label
+{
+    font-family: 'Audiowide', cursive;
+    font-family: "Audiowide", sans-serif; 
+}
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 0.5remS;
+    border-radius: 10%;
+    padding: 5px;
+    border: 2px solid #c1c116;
+}
+#contact-box button
+{
+    display: block;
+    margin: auto;
+}
+footer{
+    background-color: black;
+    color: aliceblue;
+    padding: 10px;
+}
